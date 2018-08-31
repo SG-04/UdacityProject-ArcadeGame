@@ -1,3 +1,4 @@
+//Set initial level to 0
 var level=0;
 document.getElementById('level').innerHTML=level;
 
