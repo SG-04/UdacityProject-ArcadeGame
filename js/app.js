@@ -47,6 +47,16 @@ var Player = function () {
     this.y = 320;
 };
 
+//Method to update Player's position
+Player.prototype.update = function() {
+ 	
+	// If the player reaches the water
+	if (player.y < 20) {
+	level++;
+	document.getElementById('level').innerHTML = level;
+	this.reset();
+}
+};
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
