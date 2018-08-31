@@ -75,7 +75,6 @@ Player.prototype.handleInput = function(direction) {
         this.y += 50;
     }
 };
-
 // Is called when the player is reset to the starting point
 Player.prototype.reset = function() {
     this.x = 200;
