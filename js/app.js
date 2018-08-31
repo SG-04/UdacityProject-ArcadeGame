@@ -81,9 +81,16 @@ Player.prototype.reset = function() {
     this.y = 320;
 };
 
-
-
 // Now instantiate your objects.
+var enemy1 = new Enemy(-90, 60);
+var enemy2 = new Enemy(-190, 140);
+var enemy3 = new Enemy(-290, 230);
+var enemy4 = new Enemy(-390, 140);
+var enemy5 = new Enemy(-490, 60);
+var enemy6 = new Enemy(-890, 230);
+
+
+
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 
