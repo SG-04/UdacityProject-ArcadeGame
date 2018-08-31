@@ -10,8 +10,8 @@ var Enemy = function(x,y) {
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
     this.sprite = 'images/enemy-bug.png';
-    this.x=this.x;
-    this.y=this.y;
+    this.x=x;
+    this.y=y;
 };
 
 // Update the enemy's position, required method for game
@@ -42,7 +42,7 @@ Enemy.prototype.render = function() {
 // This class requires an update(), render() and
 // a handleInput() method.
 var Player = function () {
-    this.sprite = 'images/char-pink-girl.png';
+    this.sprite = 'images/char-princess-girl.png';
     this.x = 200;
     this.y = 320;
 };
