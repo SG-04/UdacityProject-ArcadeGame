@@ -19,6 +19,17 @@ Enemy.prototype.update = function(dt) {
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
+    if (this.x < 505) {
+        this.x += (150 * dt);
+    }
+    else {this.x = -90;}
+
+	// If the enemy and the player collide.
+    if(this.x < player.x + 30 && this.x + 60 > player.x && this.y < player.y + 60 && this.y + 40 > player.y) {
+		level = 0;
+		document.getElementById('level').innerHTML = level;
+		player.reset();
+    }
 };
 
 // Draw the enemy on the screen, required method for game
